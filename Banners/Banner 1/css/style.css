@@ -1,0 +1,286 @@
+/*--------------------------------------------------
+Global CSS
+--------------------------------------------------*/
+* {
+	box-sizing: border-box;
+}
+.clear {
+	clear: both;
+}
+.swd_bg {
+	background: url(../resources/hero-01.jpg);
+	height: 100vh;
+	background-position: center;	
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.bg_pattern {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-image: url(../resources/banner_overlay_pattern.png);
+}
+.swd_shadow {
+	background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.22) 0%, rgba(61,61,61,0) 14%, rgba(19,19,19,0) 100%);
+	background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.8) 0%, rgba(61,61,61,0) 21%, rgba(19,19,19,0) 100%);      /* IE 10 */
+	background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.8) 0%, rgba(61,61,61,0) 21%, rgba(19,19,19,0) 100%);      /* Opera 11.10+ */
+	background: -o-linear-gradient(top, rgba(0, 0, 0, 0.8) 0%, rgba(61,61,61,0) 21%, rgba(19,19,19,0) 100%);
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	z-index: 0;
+}
+/*end: Global CSS
+--------------------------------------------------*/
+
+
+
+
+/*--------------------------------------------------
+Structure
+--------------------------------------------------*/
+
+.swd_bg {
+	float: left;
+	width: 100%;
+}
+
+.container {
+    padding: 5%;
+    position: fixed;
+    z-index: 2;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.logo {
+	float: left;
+	width: 179px;
+ /* margin: 25px 0 0 25px;
+	width: 230px;
+	margin: 40px 5%;*/
+}
+
+.logo img {
+	width: 70%;
+}
+
+.swd_head_text {
+	float: left;
+	width: 100%;
+/*    padding: 11% 5%;*/
+    text-align: left;
+	line-height: 70px;
+    padding: 50px 5% 20px;
+}
+
+a.swd_button {
+	display: table;
+	/*margin: 40px 5% 0px;*/
+	margin-left: 18px;	
+	border: 2px solid #fff;
+	padding: 9px 75px 9px 25px;
+	position: relative;
+	float: left;
+	border-radius: 60px;
+}
+
+a.swd_button:after {
+	content: "";
+	width: 2px;
+	height: 100%;
+	position: absolute;
+	background: rgba(255,255,255,0.5);
+	right: 51px;
+	top: 0px;
+}
+
+a.swd_button:before {
+	content: "";
+	background: url(../Resources/Player.png);
+	height: 100%;
+	width: 21px;
+	background-size: 100%;
+	position: absolute;
+	right: 16px;
+	top: 0px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+/*end: Structure
+--------------------------------------------------*/
+
+
+/*--------------------------------------------------
+Colors
+--------------------------------------------------*/
+.swd_head_text {
+	color: #FFFFFF;
+}
+/*end: Colors
+--------------------------------------------------*/
+
+
+/*--------------------------------------------------
+Fonts & Typography
+--------------------------------------------------*/
+
+.swd_head_text, 
+a.swd_button {
+	font-family: "Archivo Black", Arial;
+}
+.swd_head_text {
+	font-size: 280%;
+	line-height: 65px;
+	text-shadow: 0px 1px 4px rgba(0,0,0,0.50);
+	font-weight: 900;
+	margin:0px;
+	line-height: 52px;/* letter-spacing: 1.5px; */
+}
+
+a.swd_button {
+	display: table;
+	/*margin: 40px 5% 0px;*/
+	margin-left: 18px;	
+	border: 2px solid #fff;
+	padding: 9px 75px 9px 25px;
+	position: relative;
+	float: left;
+	border-radius: 60px;
+
+
+	text-shadow: 0 1px 2px #333;
+	-moz-box-shadow: 0 0 4px #000;
+	-webkit-box-shadow: 0 0 4px#000;
+	box-shadow: 0 0 4px #000;
+
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: bold;	
+	font-size: 16px;
+	color: #fff;
+}
+
+.logo h1 {
+	margin:0 !important;
+	padding:0;
+	text-indent:-1000px;l
+	ine-height:0;
+}
+/*end: Fonts & Typography
+--------------------------------------------------*/
+
+
+/*--------------------------------------------------
+Media Queries
+--------------------------------------------------*/
+/*body wrapper
+controls the overall 
+--------------------*/
+
+
+/*logo
+--------------------*/
+/*If screen is bigger than given size below*/
+/*@media screen and (min-width: 750px) {
+	.logo {
+		margin: 50px 0 0 50px;
+	}	
+}*/
+
+/*If screen is bigger than given size below*/
+@media screen and (min-width: 450px) {
+	.logo img {
+		width: 80%;
+	}
+}
+
+/*If screen is bigger than given size below*/
+@media screen and (min-width: 1000px) {
+	.logo img {
+		width: 90%;
+	}
+}
+
+/*If screen is bigger than given size below*/
+@media screen and (min-width: 1400px) {
+	.logo img {
+		width: 320%;
+	}
+}
+/*end: logo
+--------------------*/
+
+/*If screen is bigger than 350px*/
+@media screen and (min-width: 350px) {
+	.main_content {
+		padding: 14% 16% 0;	
+	}
+}
+
+
+/*If screen is bigger than 1000*/
+@media screen and (min-width: 1000px) {
+.swd_head_text {
+	font-size: 47px;
+    line-height: 70px;
+}
+
+a.swd_button {
+     padding: 14px 85px 14px 35px;
+    font-size: 14px;
+	}
+.swd_button:before {
+    width: 32px;
+    right: 23%;
+    top: 3px;
+}
+
+a.swd_button:after {
+    height: 100%;
+	right: 50px;
+    top: 0px;
+}
+.swd_head_text br:nth-child(1),.swd_head_text br:nth-child(2) {
+    display: none;
+}
+
+}
+
+/*If screen is smaller than 500*/
+@media screen and (max-width: 500px) {
+	.logo {
+
+	}
+	a.swd_button {
+/*		float: none;
+		margin:40px auto 0px;*/
+	}
+
+}
+
+/*If screen is larger than 500*/
+@media screen and (min-width: 501px) {
+/*.swd_head_text {
+    padding: 2% 5%;
+}*/
+}
+
+/*If screen is larger than 351*/
+@media screen and (min-width: 351px) {
+	.swd_head_text br:nth-child(1),
+	.swd_head_text br:nth-child(2) {
+		display: none;
+	}
+	a.swd_button {
+		float:left;
+		margin-left:5%;
+	}
+}
+
+/*end: Media Queries
+--------------------------------------------------*/
