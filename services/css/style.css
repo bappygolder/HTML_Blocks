@@ -1,0 +1,147 @@
+/*--------------------------------------------------
+Global CSS
+--------------------------------------------------*/
+@font-face {
+    font-family:MaisonNeue;
+    src: url(../font/MaisonNeue-Medium.ttf);
+}
+* {
+    box-sizing:border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/*end: Global CSS
+--------------------------------------------------*/
+
+
+
+
+/*--------------------------------------------------
+Structure
+--------------------------------------------------*/
+.ser-col {
+    width: 100%;
+    height: 100vh;
+    padding: 20px 0 0;
+}
+
+.container {
+    width: 100%;
+    float: left;
+    padding: 8%;
+}
+
+.ser_box {
+    float: left;
+    width: 100%;
+    padding: 0px 10px;
+    box-sizing: border-box;
+    margin: 10px 0px;
+}
+
+.ser_inner_box h2 {
+    float: left;
+    width: 100%;
+}
+
+.ser_inner_box {
+    float: left;
+    width: 100%;
+    margin: 10px 0px;
+}
+
+.ser_inner_box p {
+    font-size: 16px;
+    line-height: 24px;
+    color: #4a90e2;
+}
+
+/*end: Structure
+--------------------------------------------------*/
+
+
+
+
+/*--------------------------------------------------
+Colors
+--------------------------------------------------*/
+.ser_inner_box p,.ser-tophd  {
+    color: #4a90e2;
+}
+.ser_box {
+    color: #191919;
+   	}
+
+
+/*end: Colors
+--------------------------------------------------*/
+
+
+
+
+/*--------------------------------------------------
+Fonts & Typography
+--------------------------------------------------*/
+.ser_box {
+    font-family: MaisonNeue;
+    color: #191919;
+}
+.ser_inner_box h2 {
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: 200;
+
+}
+.ser_inner_box p {
+    font-size: 16px;
+    line-height: 24px;
+}
+.ser-tophd {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*end: Fonts & Typography
+--------------------------------------------------*/
+
+
+/*--------------------------------------------------
+Media Queries
+--------------------------------------------------*/
+
+/*If screen is bigger than given size below*/
+@media screen and (min-width: 500px) {
+
+}
+
+/*If screen is smaller than given size below*/
+/*try not use the following media query. Our goal
+is to go from small to large (mobile first or small 
+screen first.) So we don't usually want to apply 
+styles for screens when they are smaller than something
+we rather want to target something when screen gets
+bigger. */
+@media screen and (max-width: 1000px) {
+
+}
+@media screen and (max-width: 600px) {
+
+
+}
+
+/*end
+: Media Queries
+--------------------------------------------------*/
+
+
+/*--------------------------------------------------
+normalize.css: Downloaded: 1 Dec 2015
+--------------------------------------------------*/
+
+/*put it in a different CSS file*/
+
+
+/*end: normalize.css:
