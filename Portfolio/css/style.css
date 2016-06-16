@@ -1,0 +1,172 @@
+/*--------------------------------------------------
+Global CSS
+--------------------------------------------------*/
+* {
+    box-sizing:border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+/*end: Global CSS
+--------------------------------------------------*/
+
+
+
+
+/*--------------------------------------------------
+Structure
+--------------------------------------------------*/
+.Port-col {
+    width: 100%;
+    height: 100vh;
+    padding: 20px 0 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+h2.port-tophd {
+    width: auto;
+    display: table;
+    border-bottom: 1px solid #ccc;
+    margin: 0px auto;
+    padding: 0px 20px;
+}
+
+.sub_pra {
+    width: 60%;
+    display: table;
+    margin: 15px auto;
+}
+.port_main_box {
+    float: left;
+    width: 100%;
+    margin: 20px 0px;
+    padding: 0px;
+}
+
+.port_box_3 {
+    width: 33.33%;
+    margin: 30px 0px;
+    padding: 0px 1%;
+    float: left;
+}
+
+.port_box_3 img {
+    width: 100%;
+    float: left;
+}
+
+
+
+/*end: Structure
+--------------------------------------------------*/
+
+
+
+
+/*--------------------------------------------------
+Colors
+--------------------------------------------------*/
+h2.port-tophd {
+	color: #333;
+}
+.port_box_3 p {
+    color: #666;
+}
+
+
+/*end: Colors
+--------------------------------------------------*/
+
+
+
+
+/*--------------------------------------------------
+Fonts & Typography
+--------------------------------------------------*/
+h2.port-tophd {
+    text-align: center;
+    font-size: 43px;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding-bottom: 5px;
+}
+.port_box_3 h3 {
+    font-size: 22px;
+    line-height: 51px;
+    font-weight: 400;
+    background: rgba(234, 234, 234, 0.43);
+    padding: 0px 2%;
+    margin-bottom: 15px;
+    float: left;
+    width: 100%;
+}
+.Port-col,.port_box_3 h3,.port_box_3 p {
+    font-family: 'Raleway', sans-serif;
+}
+.port_box_3 p {
+    text-align: justify;
+    font-size: 17px;
+    line-height: 23px;
+}
+.sub_pra {
+    text-align: center;
+    font-size: 25px;
+    line-height: 38px;
+}
+
+/*end: Fonts & Typography
+--------------------------------------------------*/
+
+
+/*--------------------------------------------------
+Media Queries
+--------------------------------------------------*/
+
+/*If screen is bigger than given size below*/
+@media screen and (min-width: 500px) {
+
+}
+
+/*If screen is smaller than given size below*/
+/*try not use the following media query. Our goal
+is to go from small to large (mobile first or small 
+screen first.) So we don't usually want to apply 
+styles for screens when they are smaller than something
+we rather want to target something when screen gets
+bigger. */
+@media screen and (max-width: 1000px) {
+.port_box_3 {
+    width: 50%;
+    padding: 0px 2%;
+}
+.sub_pra{
+	width: 100%;
+}
+.container {
+    width: 90%;
+}
+}
+
+@media screen and (max-width: 600px) {
+.port_box_3,.sub_pra {
+    width: 100%;
+}
+}
+
+/*end
+: Media Queries
+--------------------------------------------------*/
+
+
+/*--------------------------------------------------
+normalize.css: Downloaded: 1 Dec 2015
+--------------------------------------------------*/
+
+/*put it in a different CSS file*/
+
+
+/*end: normalize.css:
